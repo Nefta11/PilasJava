@@ -10,7 +10,7 @@ public class pilas {
         // Agregué la declaración de la variable op
         
         do {
-            op = Integer.parseInt(JOptionPane.showInputDialog(null, "1. Insertar un valor\n2. Salir"));
+            op = Integer.parseInt(JOptionPane.showInputDialog(null, "1. Insertar un valor\n2. Eliminar un valor\n3. Salir"));
 
             switch (op) {
                 case 1:
@@ -24,9 +24,16 @@ public class pilas {
 
                 break;
 
-                case 2:
+                case 2: if(!miPila.estaVacia()){
+                    miPila.eliminar();
+                    miPila.imprimir();
+                    }else{
+                        JOptionPane.showMessageDialog(null,"Stack Underflow"); 
+                    }
+                break;
+                case 3:
                 default:break;
             }
-        } while (op < 2);
+        } while (op < 3);
     }
 }
