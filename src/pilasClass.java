@@ -43,6 +43,10 @@ public class pilasClass {
         System.out.println(i+" "+ vectorPila[i]);
     }
 
+    // Método para imprimir el elemento que esta en la cima
 
+    public int cimaPila(){
+        return vectorPila[cima];
+    }
 }
 
