@@ -38,15 +38,20 @@ public class pilasClass {
     //Método para imprimir todos los elememntos de la pila
 
     public void imprimir(){
-
-        for (int i=0; i<vectorPila.length; i++)
-        System.out.println(i+" "+ vectorPila[i]);
+        System.out.println("");
+        for (int i=vectorPila.length-1;i>-1; i--)
+        System.out.println(i+": "+ vectorPila[i]);
     }
 
     // Método para imprimir el elemento que esta en la cima
 
     public int cimaPila(){
         return vectorPila[cima];
+    }
+
+    //Método para imprimir el tamaño de la pila
+    public int tamanioPila(){
+        return vectorPila.length;
     }
 }
 
