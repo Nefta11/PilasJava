@@ -23,6 +23,18 @@ public class pilasClass {
         return eliminado;
     }
 
+    //Método para verificar si la pila esta vacia
+
+    public boolean estaVacia(){
+        return cima == -1;
+    }
+
+    //Método para verificar si la pila esta llena
+
+    public boolean estaLlena(){
+        return vectorPila.length-1 == cima;
+    }
+
 
 }
 
