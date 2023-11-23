@@ -14,9 +14,14 @@ public class pilas {
 
             switch (op) {
                 case 1:
+                if (!miPila.estaLlena()){
                     el = Integer.parseInt(JOptionPane.showInputDialog(null, "Escribe el valor del elemento"));
                     miPila.empujar(el);
                     miPila.imprimir();
+                    }else{
+                        JOptionPane.showMessageDialog(null,"Stack Overflow");
+                    }
+
                 break;
 
                 case 2:
