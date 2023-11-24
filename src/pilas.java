@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class pilas {
     public static void main(String[] args) throws Exception {
-        // Agregué la declaración de la variable op
+        //Agregué la declaración de la variable op
         int tam, op, el;
         tam = Integer.parseInt(JOptionPane.showInputDialog(null, "Escribe el tamaño de la pila"));
         pilasClass miPila = new pilasClass(tam);
