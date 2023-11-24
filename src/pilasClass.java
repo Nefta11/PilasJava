@@ -46,12 +46,13 @@ public class pilasClass {
     // Método para imprimir el elemento que esta en la cima
 
     public int cimaPila(){
+        System.out.println("El ultimo dato fue: "+ vectorPila[cima]);
         return vectorPila[cima];
     }
 
     //Método para imprimir el tamaño de la pila
-    public int tamanioPila(){
-        return vectorPila.length;
+    public void tamanioPila(){
+        System.out.println("El tamaño de la pila es de: "+ vectorPila.length);
     }
 }
 

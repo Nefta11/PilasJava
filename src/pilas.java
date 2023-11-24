@@ -10,7 +10,7 @@ public class pilas {
         // Agregué la declaración de la variable op
         
         do {
-            op = Integer.parseInt(JOptionPane.showInputDialog(null, "1. Insertar un valor\n2. Eliminar un valor\n3. Salir"));
+            op = Integer.parseInt(JOptionPane.showInputDialog(null, "Selecciona la opción que deceas ejecutar: \n1. Insertar un valor\n2. Eliminar un valor\n3. Mostrar el ultimo dato insertado\n4. Imprimir los datos de las pilas\n 5. Mostrar la longitud de la pila\n 6.Salir "));
 
             switch (op) {
                 case 1:
@@ -32,8 +32,18 @@ public class pilas {
                     }
                 break;
                 case 3:
+                miPila.cimaPila();
+                break;
+                case 4: 
+                miPila.imprimir();
+                break;
+
+                case 5:
+                miPila.tamanioPila();
+                break;
+                case 6: 
                 default:break;
             }
-        } while (op < 3);
+        } while (op < 6);
     }
 }
