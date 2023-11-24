@@ -2,13 +2,11 @@ import javax.swing.JOptionPane;
 
 public class pilas {
     public static void main(String[] args) throws Exception {
-
+        // Agregué la declaración de la variable op
         int tam, op, el;
         tam = Integer.parseInt(JOptionPane.showInputDialog(null, "Escribe el tamaño de la pila"));
         pilasClass miPila = new pilasClass(tam);
 
-        // Agregué la declaración de la variable op
-        
         do {
             op = Integer.parseInt(JOptionPane.showInputDialog(null, "Selecciona la opción que deceas ejecutar: \n1. Insertar un valor\n2. Eliminar un valor\n3. Mostrar el ultimo dato insertado\n4. Imprimir los datos de las pilas\n 5. Mostrar la longitud de la pila\n 6.Salir "));
 
